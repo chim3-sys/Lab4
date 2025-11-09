@@ -4,139 +4,197 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-    <title>Bootstrap Example3434</title>
+    <title>UMBC IS Department Home - Redesigned</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Custom Styles for UMBC Look */
+        :root {
+            --umbc-gold: #FFC72C;
+            --umbc-black: #000000;
+        }
+        .bg-umbc-black {
+            background-color: var(--umbc-black) !important;
+        }
+        .text-umbc-gold {
+            color: var(--umbc-gold) !important;
+        }
+        .btn-umbc-gold {
+            background-color: var(--umbc-gold);
+            color: var(--umbc-black);
+            border-color: var(--umbc-gold);
+            font-weight: bold;
+        }
+        .btn-umbc-gold:hover {
+            background-color: #e6b327; /* Slightly darker gold on hover */
+            border-color: #e6b327;
+            color: var(--umbc-black);
+        }
+        .navbar-brand img {
+            max-height: 40px; /* Smaller logo in the navbar */
+        }
+        .feature-card {
+            border-left: 5px solid var(--umbc-gold);
+            border-radius: 0;
+        }
+    </style>
   </head>
-  <body class="p-3 m-0 border-0 bd-example">
+  <body>
 
-    <!-- Nav Code -->
-    
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"> <img src="https://umbc.edu/wp-content/uploads/2022/02/umbc-primary-logo-250x58.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-umbc-black sticky-top shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://umbc.edu/wp-content/uploads/2022/02/umbc-primary-logo-250x58.png" alt="UMBC Logo">
+            <span class="ms-2 text-umbc-gold fw-bold d-none d-sm-inline">Information Systems</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarContent" aria-controls="mainNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <div class="collapse navbar-collapse" id="mainNavbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-          <!--
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Program
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="program.html">Undergraduate</a></li>
-                <li><a class="dropdown-item" href="program.html">Graduate</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="program.html">Openshift test</a></li>
-                <li><a class="dropdown-item" href="program.html">Lab5 test</a></li>
-              </ul>
-            </li>
-            -->
-            <li class="nav-item">
-              <a class="nav-link " href="program.html">Program </a>
+              <a class="nav-link active text-umbc-gold" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="contact.html">Contact Us</a>
+              <a class="nav-link" href="undergraduate-is.html">Undergraduate Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
           </ul>
-          
+          <button class="btn btn-sm btn-outline-light ms-3" type="button"><i class="bi bi-search"></i></button>
         </div>
       </div>
     </nav>
-   <!-- body Code -->
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
-      <h1 class="display-4 fw-bold text-body-emphasis">Welcome to Department of Information Systems test</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Welcome to the Department of Information Systems at UMBC. Our interdisciplinary program helps students develop in demand skills, preparing them for careers in IT and IS. Located near technology hubs, our suburban campus is an exciting place to be for students in tech. With a variety of degree programs to choose from, we offer programs designed to give you options for applying information systems to your career. To learn more, please contact us with any questions.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-          <button type="button" class="btn btn-warning btn-lg px-4 me-sm-3">Program</button>
-          <button type="button" class="btn btn-dark btn-lg px-4">Contact Us</button>
-          
-          <i class="bi bi-search"></i>
-        </div>
-      </div>
-     
-    </div>
-
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          
-          <div class="card">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          
-          <div class="card">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          
-          <div class="card">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
     
+    <div class="p-5 text-center bg-light border-bottom" style="background-image: url('https://via.placeholder.com/1200x400?text=Placeholder+Image+of+Modern+Tech+Campus'); background-size: cover; background-position: center; min-height: 400px; display: flex; align-items: center;">
+      <div class="container">
+        <h1 class="display-3 fw-bold text-white bg-umbc-black p-2 bg-opacity-75">Innovate Your Tomorrow.</h1>
+        <div class="col-lg-8 mx-auto p-3 bg-white bg-opacity-90 rounded">
+          <p class="lead mb-4 text-dark">
+            The UMBC Department of Information Systems fuses technology, data, and business strategy to prepare you for high-demand careers in IT and leadership.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="undergraduate-is.html" class="btn btn-umbc-gold btn-lg px-4 shadow-sm">Explore Programs</a>
+            <a href="contact.html" class="btn btn-outline-dark btn-lg px-4 shadow-sm">Get in Touch <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
-<!-- Footer Code -->
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
-      <div class="row">
-        <div class="col-12 col-md">
-         
+
+    <div class="container my-5">
+      <div class="row g-5">
+        
+        <div class="col-md-7">
+          <h2 class="pb-2 border-bottom text-umbc-gold">Why UMBC IS?</h2>
+          <p class="lead">Located in the Baltimore-Washington corridor, we're at the epicenter of innovation, offering unparalleled internship and career opportunities.</p>
+          
+          <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
+            <div class="col">
+              <div class="card h-100 feature-card shadow-sm">
+                <div class="card-body">
+                  <i class="bi bi-laptop fs-3 text-umbc-gold mb-2"></i>
+                  <h5 class="card-title">Curriculum Focused on Demand</h5>
+                  <p class="card-text">Specializations in Cybersecurity, Data Science, and Application Development.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 feature-card shadow-sm">
+                <div class="card-body">
+                  <i class="bi bi-people fs-3 text-umbc-gold mb-2"></i>
+                  <h5 class="card-title">Interdisciplinary Approach</h5>
+                  <p class="card-text">Merging technology with business, communication, and human factors.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 feature-card shadow-sm">
+                <div class="card-body">
+                  <i class="bi bi-gear fs-3 text-umbc-gold mb-2"></i>
+                  <h5 class="card-title">Accredited Excellence</h5>
+                  <p class="card-text">Programs recognized for quality and rigor in the Information Technology field.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 feature-card shadow-sm">
+                <div class="card-body">
+                  <i class="bi bi-briefcase fs-3 text-umbc-gold mb-2"></i>
+                  <h5 class="card-title">Career Ready Graduates</h5>
+                  <p class="card-text">Strong ties to government and private sector employers in the region.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-6 col-md">
-          <h5>Features</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-           
-          </ul>
+
+        <div class="col-md-5">
+          <h2 class="pb-2 border-bottom text-umbc-gold">Latest News & Events</h2>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start py-3">
+              <div class="d-flex w-100 justify-content-between">
+                <h6 class="mb-1 fw-bold">IS Seminar: AI in Healthcare</h6>
+                <small class="text-muted">Nov 15</small>
+              </div>
+              <p class="mb-1 small">Join Dr. Jane Doe as she discusses emerging ethical challenges in machine learning...</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start py-3">
+              <div class="d-flex w-100 justify-content-between">
+                <h6 class="mb-1 fw-bold">New Undergraduate Track Launched</h6>
+                <small class="text-muted">Oct 28</small>
+              </div>
+              <p class="mb-1 small">The new 'Business Analytics' track is now available for incoming freshman.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start py-3">
+              <div class="d-flex w-100 justify-content-between">
+                <h6 class="mb-1 fw-bold">Alumni Spotlight: John Smith '08</h6>
+                <small class="text-muted">Oct 10</small>
+              </div>
+              <p class="mb-1 small">Read about our alumnus leading cloud transformation at a Fortune 500 company.</p>
+            </a>
+          </div>
+          <div class="d-grid mt-4">
+              <a href="#" class="btn btn-outline-dark">View All News &gt;</a>
+          </div>
         </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
-           
-          </ul>
+      </div>
+    </div>
+    
+    <footer class="pt-5 pb-3 bg-umbc-black text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-3">
+            <h5 class="text-umbc-gold">Department of IS</h5>
+            <p class="small text-white-50">University of Maryland, Baltimore County</p>
+            <p class="small text-white-50">1000 Hilltop Circle, Baltimore, MD 21250</p>
+            <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+          </div>
+          
+          <div class="col-6 col-md-3 mb-3">
+            <h6 class="text-white">Quick Links</h6>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-light text-decoration-none" href="#">Faculty Directory</a></li>
+              <li class="mb-1"><a class="link-light text-decoration-none" href="#">Research Labs</a></li>
+              <li class="mb-1"><a class="link-light text-decoration-none" href="#">Admissions</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-6 col-md-3 mb-3">
+            <h6 class="text-white">Resources</h6>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-light text-decoration-none" href="#">Current Students</a></li>
+              <li class="mb-1"><a class="link-light text-decoration-none" href="#">Alumni</a></li>
+              <li class="mb-1"><a class="link-light text-decoration-none" href="#">Giving</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="col-6 col-md">
-          <h5>About</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
-           
-          </ul>
+        <div class="row border-top border-secondary pt-3 mt-3">
+          <div class="col-12 text-center text-white-50">
+            <small>&copy; 2025 UMBC Department of Information Systems</small>
+          </div>
         </div>
       </div>
     </footer>
